@@ -1,0 +1,13 @@
+package com.example.shop.member.service;
+
+import com.example.shop.member.Member;
+import com.example.shop.member.dto.MemberCreateRequest;
+import com.example.shop.member.dto.MemberUpdateRequest;
+
+public interface MemberService {
+    Long createMember(MemberCreateRequest memberCreateRequest);
+    List<Member> getAllMembers();
+    Member getMemberById(Long id);
+    void updateMember(Long id, MemberUpdateRequest memberUpdateRequest);
+    void deleteMember(Long id);
+}
